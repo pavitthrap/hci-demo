@@ -9,7 +9,11 @@ jobs:
 
     steps:
     - name: Making a PR comment
-      uses: github-actions-up-and-running/pr-comment@v1.0.0
+      uses: mshick/add-pr-comment@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        message: Nice PR!
+        message: |
+          **Hello**
+          🌏
+          !
+        allow-repeats: false
