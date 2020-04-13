@@ -9,9 +9,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: pavitthrap/hci-first-interaction@v1.2
+      uses: pavitthrap/hci-first-interaction@v1.3
       with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+ 	repo-token: ${{ secrets.GITHUB_TOKEN }}
+        pr-message: "Hi *insert username*! Congrats on making your first pull request. The *insert repo name* community welcomes you and looks forward to looking at your contribution *insert emoji*. In the meantime, please sign the CLA linked below and if you’d like, take a look at this file written for newer contributors. *link newbie doc*"       who-to-greet: 'Mona the Octocat'
