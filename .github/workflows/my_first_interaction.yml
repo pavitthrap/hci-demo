@@ -1,6 +1,6 @@
 name: Python package
 
-on: [push]
+on: [pull_request, issues]
 
 jobs:
   hello_world_job:
@@ -11,5 +11,5 @@ jobs:
       id: hello
       uses: pavitthrap/hci-first-interaction@v1.3
       with:
-	repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         pr-message: "# Message with markdown.\nThis is the message that will be displayed on users' first issue."
