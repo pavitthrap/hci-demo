@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: pavitthrap/hci-first-interaction@v1
+      uses: pavitthrap/hci-first-interaction@v1.1
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
