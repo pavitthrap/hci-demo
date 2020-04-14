@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: pavitthrap/hci-first-interaction@v1.8.3
+      uses: pavitthrap/hci-first-interaction@v1.8.4
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         pr-message: "# Message with markdown.\nThis is the message that will be displayed on users' first issue."
