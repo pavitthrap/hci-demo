@@ -8,7 +8,6 @@ jobs:
     name: A job that is scheduled every 15 min
     steps:
     - name: Moodbar comment creation step 
-      id: N/A
       uses: pavitthrap/hci-moodbar@v1.0.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
