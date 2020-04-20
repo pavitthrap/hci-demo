@@ -3,7 +3,7 @@ name: Python package
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/15 * * * *'
+    - cron:  '* * */1 * *'
 
 jobs:
   moodbar_job:
@@ -11,7 +11,7 @@ jobs:
     name: A job that is scheduled every 15 min
     steps:
     - name: Moodbar comment creation step 
-      uses: pavitthrap/hci-moodbar@v1.0.0
+      uses: pavitthrap/hci-moodbar@v1.0.1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
