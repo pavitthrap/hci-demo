@@ -1,9 +1,6 @@
 name: Python package
 
-on:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '*/15 */1 */1 * *'
+on:[push]
 
 jobs:
   moodbar_job:
