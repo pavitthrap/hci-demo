@@ -13,4 +13,5 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           number-of-months: 1
+          repo-name: "hci-demo"
 
