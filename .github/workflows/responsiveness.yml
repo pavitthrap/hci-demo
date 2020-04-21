@@ -1,0 +1,16 @@
+name: Responsiveness Action
+
+on: [issues]
+
+jobs:
+  responsiveness_job:
+    runs-on: ubuntu-latest
+    name: Check responsiveness score of repo
+    steps:
+      - name: Responsiveness calculation and output
+        id: responsiveness
+        uses: pavitthrap/hci-responsiveness-action@v1.0.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          number-of-months: 1
+
