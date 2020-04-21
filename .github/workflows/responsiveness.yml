@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Responsiveness calculation and output
         id: responsiveness
-        uses: pavitthrap/hci-responsiveness-action@v1.0.2
+        uses: pavitthrap/hci-responsiveness-action@v1.1.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           number-of-months: 1
