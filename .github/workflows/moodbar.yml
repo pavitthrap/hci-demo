@@ -2,7 +2,7 @@ name: Python package
 
 on:
   schedule:
-    - cron:  '21 16 22 1-12 *'
+    - cron: '*/10 * * * *' # '21 16 22 1-12 *'
 
 jobs:
   moodbar_job:
