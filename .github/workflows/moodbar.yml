@@ -3,14 +3,12 @@ name: Python package
 on:
   push:
   schedule:
-    - cron: 'CRON_TZ=America/New_York 03 17 22 1-12 *'
+    - cron: '07 21 22 1-12 *'
 
 jobs:
   moodbar_job:
     runs-on: ubuntu-latest
     name: A job that is scheduled every 15 min
-    env:
-      TZ: America/New_York
     steps:
     - name: Moodbar comment creation step 
       uses: pavitthrap/hci-moodbar@v1.0.2
