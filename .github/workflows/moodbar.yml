@@ -2,7 +2,7 @@ name: Python package
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # '21 16 22 1-12 *'
+    - cron: '29 16 22 1-12 *'
 
 jobs:
   moodbar_job:
@@ -10,7 +10,7 @@ jobs:
     name: A job that is scheduled every 15 min
     steps:
     - name: Moodbar comment creation step 
-      uses: pavitthrap/hci-moodbar@v1.0.1
+      uses: pavitthrap/hci-moodbar@v1.0.2
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
