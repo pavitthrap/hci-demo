@@ -1,6 +1,7 @@
 name: Python package
 
 on:
+  push:
   schedule:
     - cron: '31 16 22 1-12 *'
 
