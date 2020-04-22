@@ -3,7 +3,7 @@ name: Python package
 on:
   push:
   schedule:
-    - cron: '31 16 22 1-12 *'
+    - cron: 'CRON_TZ=America/New_York 03 17 22 1-12 *'
 
 jobs:
   moodbar_job:
