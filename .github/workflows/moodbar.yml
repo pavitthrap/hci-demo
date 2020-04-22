@@ -3,7 +3,7 @@ name: Python package
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '59 1 22 * *'
+    - cron:  '4 14 22 * *'
 
 jobs:
   moodbar_job:
@@ -17,3 +17,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
+      run: date
