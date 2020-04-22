@@ -14,4 +14,3 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
-      run: date
