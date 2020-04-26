@@ -11,9 +11,9 @@ jobs:
     name: A job that is scheduled every 15 min
     steps:
     - name: Moodbar comment creation step 
-      uses: pavitthrap/hci-moodbar@v1.0.5
+      uses: pavitthrap/hci-moodbar@v1.0.6
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         repo-name: "hci-demo"
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
-        mentor-list: "pavitthrap, wfaad" 
+        mentor-list: "pavitthrap,wfaad" 
