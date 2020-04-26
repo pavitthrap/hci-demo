@@ -14,6 +14,6 @@ jobs:
       uses: pavitthrap/hci-moodbar@v1.0.3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-	repo-name: 'hci-demo'
-	mentor-list: 'pavitthrap,dsfpihwif' 
+        repo-name: "hci-demo"
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
+        mentor-list: "pavitthrap, wfaad" 
