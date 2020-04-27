@@ -1,6 +1,6 @@
 name: Responsiveness Action
 
-on: [push, issues]
+on: [issues]
 
 jobs:
   responsiveness_job:
