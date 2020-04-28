@@ -1,14 +1,19 @@
 name: Python package
 
-on:[push]
+on:
+  push:
+  schedule:
+    - cron: '07 20 22 1-12 *'
 
 jobs:
   moodbar_job:
     runs-on: ubuntu-latest
-    name: A job that is scheduled every 15 min
+    name: A job that is scheduled once a month
     steps:
     - name: Moodbar comment creation step 
-      uses: pavitthrap/hci-moodbar@v1.0.1
+      uses: pavitthrap/hci-moodbar@v1.0.17
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-name: "hci-demo"
         moodbar-message: "# Moodbar Issue.\nThis is the message that will be displayed on users' first issue."
+        mentor-list: "pavitthrap,wfaad" 
