@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Check responsiveness score of repo
     steps:
-      - name: Responsiveness calculation and output
+      - name: Responsivenesss calculation and output
         id: responsiveness
         uses: pavitthrap/hci-responsiveness-action@v1.3.2
         with:
