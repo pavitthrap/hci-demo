@@ -1,7 +1,7 @@
 name: Python package
 
 on:
-  pull:
+  push:
   schedule:
     - cron: '07 20 22 1-12 *'
 
