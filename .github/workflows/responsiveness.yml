@@ -11,7 +11,7 @@ jobs:
         id: responsiveness
         uses: pavitthrap/hci-responsiveness-action@v1.3.5
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.HCI_TOKEN }}
           number-of-months: 1
           repo-name: "hci-demo"
 
