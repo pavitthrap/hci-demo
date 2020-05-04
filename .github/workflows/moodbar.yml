@@ -11,7 +11,7 @@ jobs:
     name: A job that is scheduled once a month
     steps:
     - name: Moodbar comment creation step 
-      uses: pavitthrap/hci-moodbar@v1.0.39
+      uses: pavitthrap/hci-moodbar@v1.0.40
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         repo-name: "hci-demo"
