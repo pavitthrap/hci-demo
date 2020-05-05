@@ -1,7 +1,6 @@
 name: Moodbar Action
 
 on:
-  push:
   schedule:
     - cron: '07 20 22 1-12 *'
 
