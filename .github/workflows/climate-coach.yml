@@ -8,7 +8,7 @@ jobs:
     name: A job that is scheduled once a month(S)
     steps:
     - name: Climate coach comment creation step 
-      uses: pavitthrap/hci-climate-coach@v1.0.76
+      uses: pavitthrap/hci-climate-coach@v1.0.77
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         google-api-key: ${{ secrets.GOOGLE_API_KEY }}
