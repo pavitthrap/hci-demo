@@ -14,11 +14,11 @@ jobs:
         google-api-key: ${{ secrets.GOOGLE_API_KEY }}
         repo-name: "hci-demo"
         repo-owner: "pavitthrap"
-    - name: Saving csv file
-      uses: actions/upload-artifact@v1
-      with:
-        name: artifact 
-        path: report.csv
+        #- name: Saving csv file
+        #  uses: actions/upload-artifact@v1
+        #  with:
+        #    name: artifact 
+        #    path: report.csv
     - name: Send mail
       uses: dawidd6/action-send-mail@v2
       with:
