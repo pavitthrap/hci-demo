@@ -28,11 +28,11 @@ jobs:
         password: ${{secrets.MAIL_PASSWORD}}
         subject: Github Actions job result
         # Literal body:
-        # body: Build job of ${{github.repository}} completed successfully!
+        body: Build job of ${{github.repository}} completed successfully!
         # Read file contents as body:
-        body: file://climate_report.txt
-        to: pavittthp@andrew.cmu.edu
-        from: '"Luke Skywalker" <pavitthra.n.p@gmail.com>'
+        # body: file://climate_report.txt
+        to: 'pavittthp@andrew.cmu.edu'
+        from: ' "Pavitthra Pandurangan" <pavitthra.n.p@gmail.com>'
         # Optional content type (defaults to text/plain):
         content_type: text/html
         # Optional attachments:
