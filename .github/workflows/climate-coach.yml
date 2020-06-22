@@ -32,7 +32,7 @@ jobs:
         # Read file contents as body:
         body: file://climate_report.txt
         to: pavittthp@andrew.cmu.edu
-        from: Luke Skywalker # <user@example.com>
+        from: '"Luke Skywalker" <pavitthra.n.p@gmail.com>'
         # Optional content type (defaults to text/plain):
         content_type: text/html
         # Optional attachments:
