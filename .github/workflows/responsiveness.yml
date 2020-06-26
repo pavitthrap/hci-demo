@@ -12,6 +12,7 @@ jobs:
         uses: jadelyyy/hci-bot-responsiveness@v1.11.24
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          # additional-token: ${{ secrets.ADDITIONAL_TOKEN }}
+          auth-token: ${{ secrets.HCI_TOKEN }}
           number-of-months: 1
-          repo-name: "hci-bot-demo"
+          repo-name: "hci-demo"
+          repo-owner: "pavitthrap"

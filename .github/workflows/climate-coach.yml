@@ -1,6 +1,6 @@
 name: Climate Coach Action
 
-on: [push]
+on: [issues]
 
 jobs:
   climate_job:
